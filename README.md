@@ -17,7 +17,7 @@
 ## ジオプロセシング ツール と プログラム
 Pythonスクリプトファイル（MP_Farmland_JsonToFeatureClass.py , MP_Farmland_ShapefileToFeatureClass.py）を、コマンドプロンプト から実行しても利用可能ですが、[ファイル一式](https://github.com/EsriJapan/farmland-polygon-conversion-tools/releases/download/v1.0.0/farmland-polygon-conversion-tools.zip) を入手し解凍後、ArcGIS Pro へ ツールボックス を追加することで、ジオプロセシング ツールとして利用することも可能です。  
   
-キャプチャを入れる  
+![Farmland-MP-Convert-toolbox](./image/Farmland_MP_Convert_toolbox.png)
   
 
 **[農地筆ポリゴン変換 サンプルツールボックス]** : `Farmland_MP_Convert_toolbox.pyt`  
