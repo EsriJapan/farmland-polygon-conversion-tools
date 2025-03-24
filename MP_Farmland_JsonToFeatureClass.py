@@ -111,8 +111,9 @@ class FarmlandGeojsonToFeaturesEx():
             crs_code = self.__get_geom_crs_code(record_dict)
             if crs_code > 0:
                 projection = arcpy.SpatialReference(crs_code)
-            arcpy.AddMessage(u"    フィーチャクラス の新規作成...{}".format(arctype))
-            arcpy.management.CreateFeatureclass(path, name, arctype, spatial_reference=projection)
+            if not arcpy.Exists(output_fc):
+                arcpy.AddMessage(u"    フィーチャクラス の新規作成...{}".format(arctype))
+                arcpy.management.CreateFeatureclass(path, name, arctype, spatial_reference=projection)
 
             for key in record_dict:
                 if key == "geometry":
